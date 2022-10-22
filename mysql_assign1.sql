@@ -7,8 +7,7 @@ create table SalesPeople(
     Sname VARCHAR(255) NOT NULL,
     City VARCHAR(255),
     Comm INT,
-    PRIMARY KEY (Snum),
-    UNIQUE (Sname)
+    PRIMARY KEY (Snum, Sname)
 );
 
 show tables;
