@@ -82,7 +82,7 @@ WHERE Sname LIKE 'a%';
 
 -- Q.2 Display all the Salesperson whose all orders worth is more than Rs. 2000.
 
-SELECT Salespeople.Snum, Salespeople.Sname, Salespeople.City, salespeople.Comm
+SELECT Salespeople.Snum, Salespeople.Sname, Salespeople.City, Orders.Amt
 FROM salespeople LEFT JOIN Orders
 ON salespeople.Snum = Orders.Snum
 WHERE Amt > 2000;
